@@ -1,26 +1,75 @@
 aid: shopspring-com
+
 name: Spring *
-description: 'Spring * is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by gv, thrive-capital) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'ShopSpring is a Toronto‑based ecommerce solutions provider delivering platforms for entertainment, consumer packaged goods and retail brands. It offers end‑to‑end services including custom storefronts, advertising, analytics and ongoing support to help businesses grow online. The company emphasizes immersive digital experiences, omnichannel integration and data‑driven insights for its clients.'
+
 url: https://raw.githubusercontent.com/api-evangelist/shopspring-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- E-commerce
+- Marketing
+- SaaS
+- Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common:
+- type: Hosts
+  url: hosts/shopspring-com-hosts.yml
+- type: Vendors
+  url: vendors/shopspring-com-vendors.yml
+- type: DomainSecurity
+  url: security/shopspring-com-domain-security.yml
+- type: Website
+  url: https://www.shopspring.ca
+- type: Documentation
+  url: https://www.shopspring.ca/
+- type: About
+  url: https://www.shopspring.ca/about
+- type: Contact
+  url: https://www.shopspring.ca/contact
+- type: PrivacyPolicy
+  url: https://www.shopspring.ca/privacy-policy
+
+apis: []
+
 x-backed-by:
 - gv
 - thrive-capital
-common:
-- type: Website
-  url: http://shopspring.com
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-10-22'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://www.shopspring.ca
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

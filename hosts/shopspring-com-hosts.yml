@@ -1,0 +1,42 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.shopspring.ca
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: shopspring.ca
+  role: api
+  relation: own
+- host: www.shopspring.ca
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Documentation
+  - About
+  - Contact
+  - PrivacyPolicy
+  serves:
+  - docs
+  - hosting
+  vendor: vercel
+  registrable_domain: shopspring.ca
+  role: website
+  relation: own

@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/shopspring-com/integrations
+- https://zapier.com/apps/shopspring/integrations
+- https://zapier.com/apps/spring/integrations
+- https://n8n.io/integrations/shopspring-com/
+- https://n8n.io/integrations/shopspring/
+- https://composio.dev/toolkits/shopspring-com
+- https://monid.ai/tools/shopspring-com
+checked:
+- https://composio.dev/toolkits/shopspring-com
+- https://monid.ai/tools/shopspring-com
+- https://n8n.io/integrations/shopspring-com/
+- https://n8n.io/integrations/shopspring/
+- https://zapier.com/apps/shopspring-com/integrations
+- https://zapier.com/apps/shopspring/integrations
+- https://zapier.com/apps/spring/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
